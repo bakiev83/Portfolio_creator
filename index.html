@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Creator</title>
+    <link rel="stylesheet" href="./css/block.css">
+</head>
+<body>
+    <header>
+        <section id="navigation" class="navigation">            
+            <div id="nav" class="nav flex">
+                <img src="./icons/logo.svg" alt="logo">
+                <ul class="flex nav-bar">
+                    <li><a class="" href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#testMonials">Testmonial</a></li>
+                </ul>
+                <div class="nav__burger" onclick="openBurger()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>          
+                <div class="nav__burger-content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#banner">Services</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#testMonials">Testmonial</a></li>
+                    </ul>
+                </div>
+                <div onclick="darkLightFuncion()" id="mode" class="light">
+                </div>
+
+            </div>
+        </section>
+        <button id="myBtn" title="Go to top">Top</button>        
+    </header>
+    
+    <main>
+        <section id="banner" class="banner">
+            <div class="banner__box container flex">
+                <div class="banner__box__content">
+                    <h1 class="banner__box__content--title">
+                        I design products <br>
+                        <span>that delight and inspire people.</span>
+                    </h1>
+                    <p class="banner__box__content--subtitle">Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing startups.</p>
+                    <div class="flex">
+                        <span class="banner--btn btn-primary">
+                            Book a call
+                        </span>
+                        <span class="banner--btn btn-primary">
+                            Download CV
+                            <img src="./icons/rightArrow.svg" alt="rightArrow">
+                        </span>
+                    </div>
+                </div>
+                <div class="banner__box__img">
+                    <img src="./images/bannerImg.png" alt="bannerImg">
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="services">
+            <div class="services__box container flex">                
+                <h3>SERVICES</h3>
+                <h2>Design that solves problems, one product at a time.</h2>
+                <ul class="services__box__content flex">
+                    <li>
+                        <img src="./icons/services1.svg" alt="services1">
+                        <h4>What I can do for you</h4>
+                        <p>Faster, better products that your users love. Here's all the services I provide:</p>
+                        <div class="services__box__content__item flex">
+                            <h5><span></span>Design Strategy</h5>
+                            <h5><span></span>Web and Mobile App Design</h5>
+                            <h5><span></span>Front-end Development</h5>
+                        </div>    
+                    </li>
+                    <li>
+                        <img src="./icons/services2.svg" alt="services2">
+                        <h4>Applications I'm fluent in</h4>
+                        <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p>                            
+                        <div class="services__box__content__item flex">
+                            <h5><span></span>Sketch</h5>
+                            <h5><span></span>Webflow</h5>
+                            <h5><span></span>Figma</h5>
+                        </div>    
+                    </li>
+                    <li>
+                        <img src="./icons/services3.svg" alt="services3">
+                        <h4>What you can expect</h4>
+                        <p>I design products that are more than pretty. I make them shippable and usable.</p>  
+                        <div class="services__box__content__item flex">
+                            <h5><span></span>Clean and functional</h5>
+                            <h5><span></span>Device and user friendly</h5>
+                            <h5><span></span>Efficient and maintainable</h5>
+                        </div>    
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects">
+            <div class="projects__box container flex">
+                <h3>PROJECTS</h3>
+                <div class="projects__box__title flex">
+                    <h2>I bring results.<br>My clients are proof.</h2>
+                    <span class="banner--btn btn-primary">
+                        View all projects
+                    </span>
+                </div>
+                <div class="projects__box__content flex">
+                    
+                    <div class="projects__box__content__item">
+                        <img id="projectsImg1" src="./images/aboutMe1.jpg" alt="project1">
+                        <p id="projectsTitle1">BRANDING</p>
+                        <h5 id="projectsSubtitle1">Soulful Rebrand</h5>
+                        <span class="project--btn btn-primary">
+                            View Project
+                            <img src="./icons/rightArrow.svg" alt="rightArrow">
+                        </span>
+                    </div>
+
+                    <div class="projects__box__content__item">
+                        <img id="projectsImg2" src="./images/aboutMe1.jpg" alt="project1">
+                        <p id="projectsTitle2">PRODUCT DESIGN</p>
+                        <h5 id="projectsSubtitle2">Datadash Product design</h5>
+                        <span class="project--btn btn-primary">
+                            View Project
+                            <img src="./icons/rightArrow.svg" alt="rightArrow">
+                        </span>
+                    </div>
+                </div>                
+                <div class="projects__box__carousel flex">
+                    <span id="projectsLeft" class="projectsL">
+                        <img src="./icons/leftbtn.svg" alt="btnLeft">
+                    </span>
+                    <span id="projectsRight" class="projectsR">
+                        <img src="./icons/rightbtn.svg" alt="btnRight">
+                    </span>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="aboutMe" class="aboutMe">
+            <div class="aboutMe__box container flex">
+                <h3>ABOUT ME</h3>
+                <div class="aboutMe__box__top flex">
+                    <div class="aboutMe__box__top--title">
+                        <h3>PRODUCT DESIGNER</h3>
+                        <h2>That's me!</h2>
+                    </div>
+                    <p>Over the past 12 years, I've worked with a diverse range of clients, from startups to Fortune 500 companies. I love crafting interfaces that delight users and help businesses grow.</p>
+                </div>                
+                <ul class="aboutMe__box__content">
+                    <li class="aboutMe__box__content__show">
+                        <img src="./images/aboutMe1.jpg" alt=""/>
+                    </li>
+                    <li class="aboutMe__box__content__indicators">
+                        <img src="./images/aboutMe1.jpg" alt="aboutMe1"/>                        
+                        <img src="./images/aboutMe2.jpg" alt="aboutMe2"/>                        
+                        <img src="./images/aboutMe3.jpg" alt="aboutMe3"/>                        
+                        <img src="./images/aboutMe4.jpg" alt="aboutMe4"/>                        
+                        <img src="./images/aboutMe5.jpg" alt="aboutMe5"/>                        
+                        <img src="./images/aboutMe6.jpg" alt="aboutMe6"/>                        
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+        
+        <section id="experience" class="experience">
+            <div class="experience__box container">
+                <h3>EXPERIENCE</h3>
+                <div class="experience__box__content flex">
+                    <div class="experience__item">
+                        <img class="experience__item--img" src="./icons/experience1.svg" alt="education">
+                        <div class="experience__item__box flex">
+                            <div class="experience__item__box__a">
+                                <h5>Stanford University</h5>
+                                <p>MSc (Human Computer Interaction)</p>
+                            </div>
+                            <div class="experience__item__box__b flex">
+                                <p>• 2013-2015</p>
+                                <img src="./icons/experienceArrow.svg" alt="arrow">
+                            </div>                            
+                        </div>
+                        <div class="experience__item__line"></div>
+                        <div class="experience__item__box flex">
+                            <div class="experience__item__box__a">
+                                <h5>MIT Summer School</h5>
+                                <p>UX Training Bootcamp</p>
+                            </div>
+                            <div class="experience__item__box__b flex">
+                                <p>• 2013-2014</p>
+                                <img src="./icons/experienceArrow.svg" alt="arrow">
+                            </div>                            
+                        </div>
+                        <div class="experience__item__line"></div>
+                        <div class="experience__item__box flex">
+                            <div class="experience__item__box__a">
+                                <h5>California State University</h5>
+                                <p>BSc in Software Engineering</p>
+                            </div>
+                            <div class="experience__item__box__b flex">
+                                <p>• 2009-2012</p>
+                                <img src="./icons/experienceArrow.svg" alt="arrow">
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                    <div class="experience__item2">
+                        <img class="experience__item--img" src="./icons/experience2.svg" alt="workExperience">
+                        <div class="experience__item__box flex">
+                            <div class="experience__item__box__first">
+                                <img src="./icons/experience3.svg" alt="spaceFleet">
+                                <div class="experience__item__box__a">
+                                    <h5>SpaceFleet</h5>
+                                    <p>Senior Product Designer</p>
+                                </div>
+                            </div>
+                            <div class="experience__item__box__b flex">
+                                <p>• April 2019 - Current</p>
+                                <img src="./icons/experienceArrow.svg" alt="arrow">
+                            </div>                            
+                        </div>
+                        <div class="experience__item__line"></div>
+                        <div class="experience__item__box flex">
+                            <div class="experience__item__box__first">
+                                <img src="./icons/experience4.svg" alt="spaceFleet">
+                                <div class="experience__item__box__a">
+                                    <h5>MusicMash</h5>
+                                    <p>Information Architect</p>
+                                </div>
+                            </div>
+                            <div class="experience__item__box__b flex">
+                                <p>• April 2016 - May 2017</p>
+                                <img src="./icons/experienceArrow.svg" alt="arrow">
+                            </div>                            
+                        </div>
+                        <div class="experience__item__line"></div>
+                        <div class="experience__item__box flex">
+                            <div class="experience__item__box__first">
+                                <img src="./icons/experience5.svg" alt="spaceFleet">
+                                <div class="experience__item__box__a">
+                                    <h5>Kingdom</h5>
+                                    <p>UI Designer</p>
+                                </div>
+                            </div>
+                            <div class="experience__item__box__b flex">
+                                <p>• April 2016 - May 2017</p>
+                                <img src="./icons/experienceArrow.svg" alt="arrow">
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testMonials" class="testMonials flex">
+            <h3>TESTMONIALS</h3>
+            <div class="testMonials__box flex">
+                <div class="testMonials__box__img">
+                    <img id="person" src="./images/person1.jpg" alt="persons">
+                </div>
+                <div class="testMonials__box__content">
+                    <img src="./icons/testmonial.svg" alt="testmonial">
+                    <h6 id="text">I am always afraid of gas, and especially I am afraid that it might explode, how did Andrei help me, the forwarding driver showed.</h6>
+                    <p id="author" class="testMonials__box__content--title">Mike Jordan.</p>
+                    <p id="job" class="testMonials__box__content--subtitle">Teacher, Academic</p>
+                    <div class="testMonials__box__content__carousel flex">
+                        <span id="carouselLeft">
+                            <img src="./icons/leftbtn.svg" alt="btnLeft">
+                        </span>
+                        <span id="carouselRight">
+                            <img src="./icons/rightbtn.svg" alt="btnRight">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="faq" class="faq flex">
+            <div id="faq__container" class="faq__container">
+                <h3>FAQ</h3>
+                <h2>Frequently asked questions</h2>
+                <div class="faq__container__box flex">                   
+                    <ul>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What type of projects do you take on?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What is your hourly rate?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What time-zone do you work in?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What is the typical timeline for a project?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                    </ul>
+                    <ul>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>How do you charge for projects ?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What does your design process look like?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What metrics do you use to measure success?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                        <li class="faq__li">
+                            <div class="faq__div flex">
+                                <h4>What if I need help after the project is complete?</h4>
+                                <img src="./icons/bottomArrow.svg" alt="bottomArrow">
+                            </div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint distinctio et, vitae, exercitationem corrupti vero recusandae harum, facilis excepturi laudantium sed amet labore iure autem.</p>
+                        </li>
+                        <li class="border"></li>
+                    </ul>  
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+    
+    <script src="./js/nav.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/aboutMe.js"></script>
+    <script src="./js/testMonials.js"></script>
+    <script src="./js/FAQ.js"></script>
+</body>
+</html>

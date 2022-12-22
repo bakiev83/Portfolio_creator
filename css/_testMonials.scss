@@ -1,0 +1,77 @@
+.testMonials {
+    padding-top:  100px;    
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        margin-bottom: 79px;
+    }
+
+    &__box {
+        gap: 52px;
+
+        &__img {
+            max-width: 580px;
+            max-height: 450px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__content {
+            width: 562px;
+            max-width: 100%;
+            padding-top: 13px;
+
+            h6 {
+                margin: 20px 0 43px;
+                font-size: 36px;
+                line-height: 47px;
+                color: #000000;
+            }
+
+            &--title {
+                margin-bottom: 8px;
+                font-family: 'Roboto-bold';
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            &--sutitle {
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            &__carousel {
+                width: 100%;
+                justify-content: flex-end;
+                gap: 8px;
+
+                span {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 54px;
+                    height: 54px;
+                    border: 1px solid #000000;
+
+                    img {
+                        filter: invert(100%);
+                    }
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background: #000000;
+
+                        img {
+                            filter: invert(0%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

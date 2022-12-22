@@ -1,0 +1,171 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin: 0 auto;
+        padding: 60px 0;
+        width: 1210px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 5px 16px -5px rgba(34, 60, 80, 0.2);
+        opacity: 0.95;
+
+
+        img {
+            margin-right: 325px;
+        }
+
+        ul {
+            margin-right: 50px;
+            align-items: center;
+            gap: 40.5px;
+
+            li a {
+                font-size: 16px;
+                line-height: 28px;
+                color: #000000;
+            }
+        }
+
+        &__burger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50px;
+
+            padding: 15px;
+
+            cursor: pointer;
+
+            & span {
+                display: block;
+                width: 50px;
+                height: 4px;
+                background-color: black;
+                margin-bottom: 6px;
+            }
+        }
+
+        &__burger-content {
+            background-color: white;
+            // max-height: 550px;            
+            transform: translateY(-100%);
+            transition: 0.3s;
+            z-index: 55;
+            visibility: hidden;
+            position: fixed;
+            top: 40px;
+            right: 30px;
+            max-width: 100%;
+            color: black;
+            opacity: 95%;
+
+            ul {
+                padding: 10px 20px;
+            }
+
+            & li a {
+                font-size: 16px;
+                line-height: 28px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.this {
+    font-weight: bold;
+}
+
+.active {
+    transform: translateY(25%) !important;
+    visibility: visible !important;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgb(80, 79, 79);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+.dark-mode {
+
+    background: rgb(31, 31, 31);
+
+    h1 {
+        color: red;
+    }
+    h2,
+    h4,
+    h5,
+    h6,
+    p {
+        color: #fff !important;
+    }
+
+    h3 {
+        color: red;
+    }
+
+    span {
+        filter: invert(100%);
+    }
+
+    .nav {
+        filter: invert(100%);
+
+    }
+}
+
+#mode {
+    width: 48px;
+    height: 48px;
+    background-image: url('../icons/dark.svg');
+}
+
+.dark {
+    background-image: url('../icons/light.svg') !important;
+}
+
+.darkTopBtn {
+    background: rgb(141, 140, 140) !important;
+}
+
+
+
+@media (max-width: 1030px) {
+
+    .nav {
+        width: 1000px;
+        img {
+            margin-right: 125px;
+        }
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav__burger {
+        display: block !important
+    }
+
+}

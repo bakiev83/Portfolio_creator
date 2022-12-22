@@ -1,0 +1,39 @@
+.banner {
+    
+    padding-top: 150px;
+
+    &__box {
+        &__content {
+            max-width: 615px;
+            &--title {
+                
+                span {
+                    color: #000000;
+                }}
+                
+                &--subtitle {
+                max-width: 550px;
+                margin-bottom: 34px;
+                font-size: 22px;
+                line-height: 33px;
+                color: #666666;
+            }
+
+            & div {
+                gap: 10px;
+            }
+
+            & div span:hover {
+                & img {
+                    filter: invert(100%);
+                }
+            }
+        }
+
+        &__img {
+            & img {
+                max-height: 100%;
+            }
+        }
+    }
+}
